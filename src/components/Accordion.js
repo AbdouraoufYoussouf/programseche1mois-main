@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom';
 import { HashLink as Link } from 'react-router-hash-link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { Checkbox } from '@mui/material';
+import CircularProgresse from '../components/CircularProgress';
 import { faCaretDown, faCaretRight, faCheckCircle, faListSquares, } from '@fortawesome/free-solid-svg-icons'
 
 import '../styles/detailStyle.css'
@@ -17,7 +17,7 @@ export const Accordion = ({ titre, index, id, soustitres, idP }) => {
     return (
         <div style={{ display: 'flex',flexDirection: 'column', marginBottom: 10 }} >
             <NavLink onClick={toggleActive} key={id} to={'/program/' + idP + '/detail/' + id} className={(nav) => nav.isActive ? 'active' : 'item'}>
-                <FontAwesomeIcon style={{ marginLeft: 10 }} icon={faCheckCircle} color='white' size="xl" />
+                <CircularProgresse/>
                 <FontAwesomeIcon style={{ marginLeft: 10 }} icon={faListSquares} color='white' size="lg" />
                 <div key={index} className='leson'>
                     <p>{titre}</p>

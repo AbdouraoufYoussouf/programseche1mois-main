@@ -1,12 +1,11 @@
 import React from 'react'
 import '../styles/programStyle.css'
 import doc from '../images/doc.PNG';
-import { Link, useParams, useLocation } from 'react-router-dom';
+import { Link,} from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCheckCircle, faListSquares } from '@fortawesome/free-solid-svg-icons'
+import { faListSquares } from '@fortawesome/free-solid-svg-icons'
 import { useSelector } from 'react-redux';
 import CircularProgresse from '../components/CircularProgress';
-import Checkboxe from '../components/CheckBox';
 
 export const Program = () => {
   const Seche = useSelector((state) => state.secheState)
@@ -44,7 +43,6 @@ export const Program = () => {
             )
           })
         }
-      
       </div>
     </div>
   )
