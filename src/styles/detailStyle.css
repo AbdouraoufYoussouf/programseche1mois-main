@@ -56,6 +56,12 @@
     font-size: 20px;
     color: white;
 }
+.contAcordon{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    
+}
 
 /********************/
 .content {
@@ -65,7 +71,7 @@
     flex-direction: column;
     align-items: flex-start;
     margin-top: 20px;
-    border-radius: 7px;
+    border-radius: 15px;
     width: 65%;
     min-height: 80vh;
     font-size: 19px;
@@ -87,23 +93,30 @@
 @media screen and (max-width:1300px) {
     .content {
         left: 175px;
-        
     }
-
+    .contAcordon{
+        width: 90%;
+    }
 }
 
 @media screen and (max-width:1190px) {
     .content {
         left: 165px;
     }
-
+    
 }
 
 @media screen and (max-width:1140px) {
     .content {
         left: 155px;
     }
-
+    .contAcordon{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        
+    }
+    
 }
 
 @media screen and (max-width:1070px) {
@@ -131,6 +144,12 @@
         position: inherit;
         width: 80%;
         height: auto;
+        border-radius: 15px;
+    }
+    .contAcordon{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
     }
 
 }
@@ -142,12 +161,6 @@
     
     .content {
         background-color: #323336;
-        display: flex;
-        padding: 20px;
-        flex-direction: column;
-        align-items: flex-start;
-        margin-top: 20px;
-        border-radius: 7px;
         width: 80%;
         min-height: 80vh;
         font-size: 19px;
@@ -166,6 +179,9 @@
         }
         .leftD {
             width: 95%;
+        }
+        .contAcordon{
+            width: 80%;
         }
         
     }
