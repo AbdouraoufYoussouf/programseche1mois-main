@@ -24,7 +24,7 @@ export const Details = () => {
     <div className='containerD'>
       <div className='leftD' >
         <h1 style={{ fontSize: 30, textAlign: 'center', backgroundColor: 'blueviolet', width: '100%', borderRadius: 15, marginTop: 5 }}>36% Completé</h1>
-        <div style={{ display: 'flex', flexDirection: 'column', }}>
+        <div style={{ display: 'flex', flexDirection: 'column',width:'80%', }}>
           {
             semaine.map((item, index) => {
               return (
@@ -58,7 +58,7 @@ export const Details = () => {
                         </div>
 
                         <div >
-                          <iframe width="560" height="315" 
+                          <iframe className='video'
                             src={item.url}
                             title="YouTube video player" allowFullScreen
                             allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture"

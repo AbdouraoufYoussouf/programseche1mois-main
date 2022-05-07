@@ -12,16 +12,15 @@ export default function Home() {
     
     return (
         <div className='container'>
-            <div style={{
-                width: '100%', height: '400px', display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-around',
+            <div className='hedercont' style={{
                 backgroundImage: `url(${raf})`, backgroundSize: 'cover', backgroundPosition: 'right center', backgroundRepeat: 'no-repeat'
             }}>
                 <div className='heder'>
-                    <h2 style={{ fontSize: 25, textAlign: 'center' }}>Vous voulez etre beau pour l'été? si vous etes la c'est que
-                        oui ,alors prepare toi et le'st go</h2>
+                    <h2 className='h2'>Vous voulez etre beau pour l'été? si vous etes la c'est que
+                        oui ,alors prepare toi et let go</h2>
                 </div>
-                <div className='heder'>
-                    <h2 style={{ fontSize: 25, textAlign: 'center' }}>je sais que tu en as marre de ton biton de ventre ,c'est le moment de t'en debarasser .</h2>
+                <div className='heder h2hiden'>
+                    <h2 className='h2 '>je sais que tu en as marre de ton bidon de ventre ,c'est le moment de t'en debarasser .</h2>
                 </div>
             </div>
             <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', marginTop: 20 }}>

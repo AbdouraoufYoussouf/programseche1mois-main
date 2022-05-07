@@ -1,45 +1,50 @@
 import styled from 'styled-components'
 
-export const NavBare = styled.div`
-   // background-color: #282c34;
-   background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%); 
-   width: 100%;
-    height: 60px; 
-    position: sticky;
-   top: 0;
-   z-index: 100;
-`;
 
-export const Header = styled.div`
+export const NavbarCont = styled.div`
+    position: relative;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     align-items: center;
+    justify-content: space-around ;
     width: 100%;
     height: 60px;
-    
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%); 
+   
+    @media screen and (max-width:945px) {
+      justify-content: space-between;
+
+    }
 `;
 export const Left = styled.div`
-    height: 100%;
-    width: 300px;
-    display: flex;
-    margin-bottom: 28px;
-    h1{
+  
+    span{
         color: white;
-        padding-bottom: 10px;
+        font-size: 40px;
+        font-weight: bold;
+        text-align: center;
+    }
+    @media screen and (max-width:945px) {
+      margin-left: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      display: block;
+      position: absolute;
+      top: 1px;
+      left: 0;
     }
 `;
 export const Right = styled.div`
     
-    width: 300px;
-    ul{
-        display: flex;
-        justify-content: space-around;
-    }
-    .actived{
+  .actived{
     color: #1888ff;
     font-size: 20px;
-    text-decoration: none;
+    text-decoration: none; 
+    width: 100px;
   }
   .actived:hover{
     color: white;
@@ -52,6 +57,59 @@ export const Right = styled.div`
     font-size: 20px;
   }
   .navlink:hover {
-    color: white;
+    color: gray;
   }
+  
+`;
+
+export const Ul = styled.ul`
+  display: flex;
+  justify-content: center;
+  li{
+    list-style: none;
+    margin-right: 20px;
+  }
+  @media screen and (max-width:945px) {
+    display: ${props => props.display};;
+    justify-content: start;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 20px;
+
+    li{
+      list-style: none;
+      margin-right: 20px;
+    }
+  }
+`;
+export const MenuIcon = styled.div`
+   display: none;
+   width: 30px;
+   margin-right: -10px;
+   align-self: center;
+
+   @media screen and (max-width:945px) {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+      display: block;
+      position: absolute;
+      top: -5px;
+      right: 0;
+      transform: translate(-100%, 60%);
+      cursor: pointer;
+    }
+`;
+export const Madal = styled.div`
+   border-bottom-right-radius: 25px;
+   border-bottom-left-radius: 25px;
+   width: 100%;
+   height: 100px;
+   background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%); 
+   position: absolute;
+   right: 0;
+   top: 60px;
+   
 `;
