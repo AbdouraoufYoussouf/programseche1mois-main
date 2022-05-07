@@ -5,11 +5,13 @@ import { Link, useParams, useLocation } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCheckCircle, faListSquares } from '@fortawesome/free-solid-svg-icons'
 import { useSelector } from 'react-redux';
+import CircularProgresse from '../components/CircularProgress';
+import Checkboxe from '../components/CheckBox';
 
 export const Program = () => {
   const Seche = useSelector((state) => state.secheState)
   const Data = Seche.seche
-
+  const percentage = 66;
   const prSemaine = Data.find(d => d.id === 1)
   const semaine = prSemaine.semaine
   console.log(semaine)
@@ -31,7 +33,7 @@ export const Program = () => {
           semaine.map((item, index) => {
             return (
               <Link key={item.id} to={'detail/' + item.id} className='itemp'>
-                <FontAwesomeIcon style={{ marginLeft: 10 }} icon={faCheckCircle} color='white' size="2x" />
+                <CircularProgresse/>
                 <FontAwesomeIcon style={{ marginLeft: 10 }} icon={faListSquares} color='white' size="lg" />
 
                 <div key={index} className='leson'>
@@ -42,6 +44,7 @@ export const Program = () => {
             )
           })
         }
+      
       </div>
     </div>
   )

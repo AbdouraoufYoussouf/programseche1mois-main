@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCalendar, faCarRear, faCheckCircle, faListDots, faListSquares } from '@fortawesome/free-solid-svg-icons'
 import { useSelector } from 'react-redux';
 import { Accordion } from '../components/Accordion';
+import Checkboxe from '../components/CheckBox';
 
 
 export const Details = () => {
@@ -43,7 +44,7 @@ export const Details = () => {
           detailData.soustitres.map((item, index) => {
             return (
               <div id={item.id} key={index} style={{ display: 'flex', flexDirection: 'column', alignItems: 'self-start', width: '100%' }}>
-                <h2><input style={{ backgroundColor: 'red', width: 18, height: 18 }} type="checkbox" /> {item.nom} </h2>
+                <h2 style={{display:'flex',alignItems:'center'}}><Checkboxe /> {item.nom} </h2>
                 <p> Durée total aproximative : <code style={{ fontSize: 18 }}>{item.dure}</code></p>
                 <p style={{ fontSize: 18, margin: 0 ,textAlign:'left'}}>{item.desc} </p>
                 <h2>Routine à suivre:</h2>

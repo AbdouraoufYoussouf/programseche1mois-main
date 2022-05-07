@@ -2,9 +2,11 @@ import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom';
 import { HashLink as Link } from 'react-router-hash-link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowDown, faCalendar, faCaretDown, faCaretRight, faCarRear, faCheckCircle, faListDots, faListSquares, faUpDownLeftRight } from '@fortawesome/free-solid-svg-icons'
+import { Checkbox } from '@mui/material';
+import { faCaretDown, faCaretRight, faCheckCircle, faListSquares, } from '@fortawesome/free-solid-svg-icons'
 
 import '../styles/detailStyle.css'
+import Checkboxe from './CheckBox';
 
 export const Accordion = ({ titre, index, id, soustitres, idP }) => {
     const [isActive, setIsActive] = useState(false);
@@ -30,9 +32,9 @@ export const Accordion = ({ titre, index, id, soustitres, idP }) => {
                     {
                         soustitres.map((item, index) => {
                             return (
-                                <div key={index} style={{ marginLeft: 10, marginBottom: 7, display: 'flex', flexDirection: 'row', width: 100, alignSelf: 'center', alignItems: 'center' }}>
-                                    <input style={{ color: 'red', width: 18, height: 18 }} type="checkbox" />
-                                    <Link style={{ fontSize: 16, textDecoration: 'none', color: 'white', marginLeft: 5 }}
+                                <div key={index} style={{ margin: 0, display: 'flex', flexDirection: 'row', width: 120, alignSelf: 'center', alignItems: 'center',height:30 }}>
+                                    <Checkboxe/>
+                                    <Link style={{ fontSize: 16, textDecoration: 'none', color: 'white', marginLeft: 0 }}
                                         to={'#' + item.id}>{item.nom}</Link>
                                 </div>
                             )
