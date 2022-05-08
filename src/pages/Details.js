@@ -52,7 +52,7 @@ const [checked, setChecked] = React.useState(false);
           detailData.soustitres.map((item, index) => {
             return (
               <div id={item.id} key={index} style={{ display: 'flex', flexDirection: 'column', alignItems: 'self-start', width: '100%' }}>
-                <h2 style={{display:'flex',alignItems:'center'}}><Checkboxe checked={checked} handleChange={handleChange} /> {item.nom} </h2>
+                <h2 style={{display:'flex',alignItems:'center',backgroundColor:'blueviolet' ,width:'100%'}}><Checkboxe checked={checked} handleChange={handleChange} /> {item.nom} </h2>
                 <p> Durée total aproximative : <code style={{ fontSize: 18 }}>{item.dure}</code></p>
                 <p style={{ fontSize: 18, margin: 0 ,textAlign:'left'}}>{item.desc} </p>
                 <h2>Routine à suivre:</h2>
@@ -61,7 +61,7 @@ const [checked, setChecked] = React.useState(false);
                     return (
                       <div key={index} style={{width:'100%', display: 'flex', flexDirection: 'column',alignItems:'center',}}>
                         <div style={{width:'100%'}}>
-                          <h3 style={{ textAlign: 'left', margin: 5 }}>{item.titre} </h3>
+                          <h3 style={{ textAlign: 'left', margin: 5 ,}}>{item.titre} </h3>
                           <p style={{ fontSize: 18, marginBottom: 15, textAlign: 'left' }} >{item.desc} </p>
 
                         </div>
