@@ -47,7 +47,7 @@ const [checked, setChecked] = React.useState(false);
       <div className='content'>
         <h1>{detailData.titre}</h1>
         {detailData.intro}
-        <img style={{ width: 400, height: 'auto', borderRadius: 15, alignSelf: 'center' }} src={detailData.photo} />
+        <img style={{ width: '80%', height: 'auto', borderRadius: 15, alignSelf: 'center' }} src={detailData.photo} />
         {
           detailData.soustitres.map((item, index) => {
             return (
