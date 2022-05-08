@@ -13,7 +13,7 @@ export default function Home() {
     return (
         <div className='container'>
             <div className='hedercont' style={{
-                backgroundImage: `url(${raf})`, backgroundSize: 'cover', backgroundPosition: 'right center', backgroundRepeat: 'no-repeat'
+                backgroundImage: `url(${raf})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat'
             }}>
                 <div className='heder'>
                     <h2 className='h2'>Vous voulez etre beau pour l'été? si vous etes la c'est que
