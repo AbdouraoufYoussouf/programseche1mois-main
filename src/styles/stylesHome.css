@@ -48,7 +48,7 @@
       
     }
 }
-@media screen and (max-width:645px) {
+@media screen and (max-width:445px) {
     .h2hiden{
         display: none;
     }
@@ -58,4 +58,5 @@
         bottom: -135px;
         align-self: center;
     }
+    
 }

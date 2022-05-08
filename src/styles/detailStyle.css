@@ -177,9 +177,29 @@
         .content {
             left: 0;
             width: 95%;
+            position: static;
         }
         .leftD {
             width: 95%;
+            position: static;
+        }
+        .contAcordon{
+            width: 80%;
+        }
+        
+    }
+    @media screen and (max-width:400px) {
+        .video{
+            max-width:370px ;max-height:210px
+        }
+        .content {
+            left: 0;
+            width: 95%;
+            position: static;
+        }
+        .leftD {
+            width: 95%;
+            position: static;
         }
         .contAcordon{
             width: 80%;

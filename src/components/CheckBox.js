@@ -4,11 +4,8 @@ import Checkbox from '@mui/material/Checkbox';
 
 
 
-export default function Checkboxe() {
-    const [checked, setChecked] = React.useState(false);
-    const handleChange = (event) => {
-        setChecked(!checked);
-      };
+export default function Checkboxe({checked,handleChange}) {
+  
 
   return (
     <div>

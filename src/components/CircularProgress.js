@@ -3,11 +3,14 @@ import PropTypes from 'prop-types';
 import CircularProgress from '@mui/material/CircularProgress';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
+import { purple, red } from '@mui/material/colors';
+
+const primary = red[500]; // #f44336
 
 function CircularProgressWithLabel(props) {
   return (
     <Box sx={{ position: 'relative', display: 'inline-flex' }}>
-      <CircularProgress color='inherit' variant="determinate" {...props} />
+      <CircularProgress thickness={20} size={40} color='info' variant="determinate" {...props} />
       <Box
         sx={{
           top: 0,
@@ -37,8 +40,7 @@ CircularProgressWithLabel.propTypes = {
   value: PropTypes.number.isRequired,
 };
 
-export default function CircularProgresse() {
-  const [progress, setProgress] = React.useState(80);
+export default function CircularProgresse({progress}) {
 
   React.useEffect(() => {
    

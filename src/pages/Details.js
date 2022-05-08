@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../styles/detailStyle.css'
 import { NavLink, useParams } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -6,25 +6,33 @@ import { faCalendar, faCarRear, faCheckCircle, faListDots, faListSquares } from 
 import { useSelector } from 'react-redux';
 import { Accordion } from '../components/Accordion';
 import Checkboxe from '../components/CheckBox';
+import { LinearProgress } from '../components/LinearProgress';
 
 
 export const Details = () => {
+  const [pourcentage,setPourcentage] = useState('50')
+
   const Seche = useSelector((state) => state.secheState)
   const Data = Seche.seche
 
   const { idP, idItem } = useParams()
   //console.log(idP)
-  ///////////// fonction qui va afficher les sous titres dans le side left /////
+
   const prSemaine = Data.find(d => d.id === parseInt(idP))
   const semaine = prSemaine.semaine
   const detailData = semaine.find(s => s.id == idItem)
-  //const soutitre = detailData.soustitres;
-  //console.log('soutitre', soutitre)
-
+//// Checkbox
+const [checked, setChecked] = React.useState(false);
+    const handleChange = (event) => {
+        setChecked(!checked);
+      };
   return (
     <div className='containerD'>
       <div className='leftD' >
-        <h1 style={{ fontSize: 30, textAlign: 'center', backgroundColor: 'blueviolet', width: '100%', borderRadius: 15, marginTop: 5 }}>36% Completé</h1>
+        <div style={{ fontSize: 30, textAlign: 'center', backgroundColor: 'blueviolet', width: '100%', borderRadius: 15, marginBottom: 15 }}>
+      <LinearProgress widthL='100%' widthP={pourcentage+'%'} title={pourcentage+'% Completé'}/>
+
+        </div>
         <div className='contAcordon'>
           {
             semaine.map((item, index) => {
@@ -44,7 +52,7 @@ export const Details = () => {
           detailData.soustitres.map((item, index) => {
             return (
               <div id={item.id} key={index} style={{ display: 'flex', flexDirection: 'column', alignItems: 'self-start', width: '100%' }}>
-                <h2 style={{display:'flex',alignItems:'center'}}><Checkboxe /> {item.nom} </h2>
+                <h2 style={{display:'flex',alignItems:'center'}}><Checkboxe checked={checked} handleChange={handleChange} /> {item.nom} </h2>
                 <p> Durée total aproximative : <code style={{ fontSize: 18 }}>{item.dure}</code></p>
                 <p style={{ fontSize: 18, margin: 0 ,textAlign:'left'}}>{item.desc} </p>
                 <h2>Routine à suivre:</h2>
