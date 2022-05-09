@@ -59,6 +59,7 @@
     background-color: cornflowerblue;
     padding-left: 3px;
     width: 90%;
+    margin-right: 2px;
     height: 44.5px;
     display: flex;
     margin-bottom: 2px;
@@ -100,7 +101,7 @@
     margin-left: 5;
 }
 .video{
-    width:560px ;height:315px
+    width:760px ;height:428px
 }
 
 /* Responsive */
@@ -130,7 +131,10 @@
         width: 100%;
         
     }
-    
+    .video{
+         width:560px ;height:315px
+    }
+   
 }
 
 @media screen and (max-width:1070px) {
