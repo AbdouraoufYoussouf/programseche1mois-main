@@ -207,18 +207,8 @@ var Data = [
                         "routines": [
                             {
                                 "id": 1,
-                                "titre": 'Echauffement',
-                                "url": 'https://www.youtube.com/embed/pcgzgl8b5C8',
-                            },
-                            {
-                                "id": 2,
-                                "titre": 'Bas du Coprs X2',
-                                "url": "https://www.youtube.com/embed/q7rCeOa_m58",
-                            },
-                            {
-                                "id": 3,
-                                "titre": 'Abdominaux',
-                                "url": "https://www.youtube.com/embed/XgI_p8bKg78",
+                                "titre": '1- Souplesse',
+                                "url": "https://www.youtube.com/embed/xvrWZk6ZekQ",
                             },
 
                         ]
@@ -298,13 +288,13 @@ var Data = [
                         },
                         {
                             "id": 2,
-                            "titre": 'Pectoraux X2',
-                            "url": "https://www.youtube.com/embed/2m6FlDwaIhc",
+                            "titre": 'Bas du Coprs X2',
+                            "url": "https://www.youtube.com/embed/q7rCeOa_m58",
                         },
                         {
                             "id": 3,
-                            "titre": 'Cardio X2',
-                            "url": "https://www.youtube.com/embed/D1fxXAJ2wQs",
+                            "titre": 'Abdominaux',
+                            "url": "https://www.youtube.com/embed/XgI_p8bKg78",
                         },
                     ]
                 },
