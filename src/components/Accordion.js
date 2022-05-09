@@ -24,17 +24,23 @@ export const Accordion = ({ titre, index, id, soustitres, idP }) => {
    
     return (
         <div style={{ display: 'flex',flexDirection: 'column', marginBottom: 10 }} >
-            <NavLink onClick={toggleActive} key={id} to={'/program/' + idP + '/detail/' + id} className={(nav) => nav.isActive ? 'active' : 'item'}>
-                <CircularProgresse progress={progress}/>
-                <FontAwesomeIcon style={{ marginLeft: 10 }} icon={faListSquares} color='white' size="lg" />
-                <div key={index} className='leson'>
-                    <p>{titre}</p>
+            <div className='mereItem' style={{}}>
+
+                <NavLink  key={id} to={'/program/' + idP + '/detail/' + id} className={(nav) => nav.isActive ? 'active' : 'item'}>
+                    <CircularProgresse progress={progress} />
+                    <FontAwesomeIcon style={{ marginLeft: 10 }} icon={faListSquares} color='white' size="lg" />
+                    <div key={index} className='leson'>
+                        <p>{titre}</p>
+                    </div>
+                </NavLink>
+                <div onClick={toggleActive} >
+
+                    {isActive ?
+                        <FontAwesomeIcon style={{ marginRight: 10 }} className='icondown' icon={faCaretDown} color='white' size="2x" />
+                        : <FontAwesomeIcon style={{ marginRight: 10 }} className='icondown' icon={faCaretRight} color='white' size="2x" />
+                    }
                 </div>
-                {isActive ?
-                    <FontAwesomeIcon style={{ marginRight: 10 }} icon={faCaretDown} color='white' size="2x" />
-                    : <FontAwesomeIcon style={{ marginRight: 10 }} icon={faCaretRight} color='white' size="2x" />
-                }
-            </NavLink>
+            </div>
             {
                 isActive ? <div style={{ display: 'flex', flexDirection: 'column' }}>
                     {

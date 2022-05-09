@@ -22,13 +22,21 @@
     position: fixed;
     overflow-y: auto;
 }
+.mereItem{
+    background-color: rgb(115, 111, 119);
+    border-radius: 10px;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    width:100%;
+    height:45px;
+    align-items:center;
 
+}
 .item {
     padding-left: 3px;
-    background-color: rgb(115, 111, 119);
-    width: 100%;
-    height: 45px;
-    border-radius: 10px;
+    width: 90%;
+    height: 100%;
     display: flex;
     margin-bottom: 2px;
     flex-direction: row;
@@ -39,23 +47,28 @@
 
 }
 
-.item:hover {
+.mereItem:hover {
     background-color: cornflowerblue;
+}
+.icondown:hover {
+    margin-right: 10px;
+    color: rgb(141, 12, 50);
 }
 
 .active {
     background-color: cornflowerblue;
-    width: 100%;
-    height: 45px;
-    border-radius: 10px;
+    padding-left: 3px;
+    width: 90%;
+    height: 44.5px;
     display: flex;
     margin-bottom: 2px;
-    padding-left: 3px;
+    border-radius: 10px;
     flex-direction: row;
     align-items: center;
     text-decoration: none;
     font-size: 20px;
     color: white;
+    margin-bottom: 0px;
 }
 .contAcordon{
     display: flex;
