@@ -9,7 +9,7 @@ import '../styles/detailStyle.css'
 import Checkboxe from './CheckBox';
 
 export const Accordion = ({ titre, index, id, soustitres, idP }) => {
-    const [isActive, setIsActive] = useState(true);
+    const [isActive, setIsActive] = useState(false);
     const [progress, setProgress] = useState(100);
 
     const toggleActive = () => {
@@ -18,17 +18,10 @@ export const Accordion = ({ titre, index, id, soustitres, idP }) => {
 
     // Checkbox
 
-    const [checked, setChecked] = React.useState([
-        {'checked1':false},
-        {'checked2':false},
-        {'checked3':false},
-        {'checked4':false},
-        {'checked5':false},
-    ]);
+    const [checked, setChecked] = React.useState(false);
     
-    const handleChange = (event) => {
-        setChecked({checked1:true});
-      };
+    
+   
     return (
         <div style={{ display: 'flex',flexDirection: 'column', marginBottom: 10 }} >
             <NavLink onClick={toggleActive} key={id} to={'/program/' + idP + '/detail/' + id} className={(nav) => nav.isActive ? 'active' : 'item'}>
@@ -48,7 +41,7 @@ export const Accordion = ({ titre, index, id, soustitres, idP }) => {
                         soustitres.map((item, index) => {
                             return (
                                 <div key={index} style={{ margin: 0, display: 'flex', flexDirection: 'row', width: 120, alignSelf: 'center', alignItems: 'center',height:30 }}>
-                                    <Checkboxe checked={checked} handleChange={handleChange} />
+                                    <Checkboxe checked={checked}  />
                                     <Link style={{ fontSize: 16, textDecoration: 'none', color: 'white', marginLeft: 0 }}
                                         to={'#' + item.id}>{item.nom}</Link>
                                 </div>

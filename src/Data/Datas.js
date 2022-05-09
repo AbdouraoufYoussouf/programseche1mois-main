@@ -153,7 +153,7 @@ var Data = [
                     {
                 "id": 1,
                 "nom": "JOUR 6",
-                "dure": "41min",
+                "dure": "54min",
                 'desc': "Cette dernière séance travaille principalement les épaules et le dos, tout en aidant à améliorer sa posture.",
                 "routines": [
                     {
@@ -178,7 +178,7 @@ var Data = [
                     {
                         "id": 2,
                         "nom": "JOUR 7",
-                        "dure": "1h20",
+                        "dure": "60min",
                         'desc': "Cette dernière séance travaille principalement les épaules et le dos, tout en aidant à améliorer sa posture.",
                         "routines": [
                             {
@@ -188,13 +188,13 @@ var Data = [
                             },
                             {
                                 "id": 2,
-                                "titre": 'Pectoraux',
+                                "titre": 'Pectoraux X2',
                                 "url": "https://www.youtube.com/embed/2m6FlDwaIhc",
                             },
                             {
                                 "id": 3,
-                                "titre": 'Abdominaux',
-                                "url": 'https://www.youtube.com/embed/3eQa7C6D4XU',
+                                "titre": 'Cardio X2',
+                                "url": "https://www.youtube.com/embed/D1fxXAJ2wQs",
                             },
                         ]
                     },
@@ -202,7 +202,7 @@ var Data = [
                     {
                         "id": 3,
                         "nom": "JOUR 8",
-                        "dure": "50min",
+                        "dure": "1h05min",
                         'desc': "Cette dernière séance travaille principalement les épaules et le dos, tout en aidant à améliorer sa posture.",
                         "routines": [
                             {
@@ -212,13 +212,13 @@ var Data = [
                             },
                             {
                                 "id": 2,
-                                "titre": 'Pectoraux',
-                                "url": "https://www.youtube.com/embed/2m6FlDwaIhc",
+                                "titre": 'Bas du Coprs X2',
+                                "url": "https://www.youtube.com/embed/q7rCeOa_m58",
                             },
                             {
                                 "id": 3,
                                 "titre": 'Abdominaux',
-                                "url": 'https://www.youtube.com/embed/3eQa7C6D4XU',
+                                "url": "https://www.youtube.com/embed/XgI_p8bKg78",
                             },
 
                         ]
@@ -227,7 +227,7 @@ var Data = [
                     {
                         "id": 4,
                         "nom": "JOUR 9",
-                        "dure": "30min",
+                        "dure": "1h05min",
                         'desc': "Cette dernière séance travaille principalement les épaules et le dos, tout en aidant à améliorer sa posture.",
                         "routines": [
                             {
@@ -237,13 +237,18 @@ var Data = [
                             },
                             {
                                 "id": 2,
-                                "titre": 'Pectoraux',
-                                "url": "https://www.youtube.com/embed/2m6FlDwaIhc",
+                                "titre": 'Epaules ',
+                                "url": "https://www.youtube.com/embed/1nTjEYqcWXs",
                             },
                             {
                                 "id": 3,
-                                "titre": 'Abdominaux',
-                                "url": 'https://www.youtube.com/embed/3eQa7C6D4XU',
+                                "titre": 'Abdominaux X2',
+                                "url": "https://www.youtube.com/embed/jWc0IiZH6zw",
+                            },
+                            {
+                                "id": 4,
+                                "titre": 'Cardio',
+                                "url": "https://www.youtube.com/embed/QnGQbFk_MRk",
                             },
                         ]
                     },
@@ -251,7 +256,7 @@ var Data = [
                     {
                         "id": 5,
                         "nom": "JOUR 10",
-                        "desc": "Cette dernière séance travaille principalement les épaules et le dos, tout en aidant à améliorer sa posture.",
+                        "desc": "Cette dernière séance on va juste se reposé un peu pour laisser le coprs recuperer en faisant juste 20 minutes de souplesse",
                         "routines": [
                             {
                                 "id": 1,
@@ -260,14 +265,10 @@ var Data = [
                             },
                             {
                                 "id": 2,
-                                "titre": 'Pectoraux',
-                                "url": "https://www.youtube.com/embed/2m6FlDwaIhc",
+                                "titre": 'Souplesse',
+                                "url": "https://www.youtube.com/embed/NqVSG7Bmc24",
                             },
-                            {
-                                "id": 3,
-                                "titre": 'Abdominaux',
-                                "url": 'https://www.youtube.com/embed/3eQa7C6D4XU',
-                            },
+                          
                         ]
                     },
 
@@ -292,21 +293,18 @@ var Data = [
                     "routines": [
                         {
                             "id": 1,
-                            "titre": '1- Echauffement',
-                            "desc": "L'échauffement est obligatoire avant de commencer. En plus de prévenir des blessures, il permet de faire monter le corps en température pour que les muscles puissent fonctionner dans de meilleures conditions, et de faire augmenter la fréquence cardiaque. ",
+                            "titre": 'Echauffement',
                             "url": 'https://www.youtube.com/embed/pcgzgl8b5C8',
                         },
                         {
                             "id": 2,
-                            "titre": '2- Pectoraux x 2',
-                            "desc": "Dans cette video nous allons cibler les pectoraux avec des differents exercices de pompes, je te propose de faire deux repetitions sur cette video ,mais ça depend de ta forme et de ta motivatioin.",
+                            "titre": 'Pectoraux X2',
                             "url": "https://www.youtube.com/embed/2m6FlDwaIhc",
                         },
                         {
                             "id": 3,
-                            "titre": '3- Abdominaux x 2',
-                            "desc": "Pour les abdos essaye de donner le maximum d'effort pout bien faire l'exercice ,car pas mal des gens font cette erreur de ne pas bien faire les exercices comme il faut et il risque des blessures,ou un mauvais resultat,repeter cette video deux fois ou plus s'il vous reste encore d'energie .",
-                            "url": 'https://www.youtube.com/embed/3eQa7C6D4XU',
+                            "titre": 'Cardio X2',
+                            "url": "https://www.youtube.com/embed/D1fxXAJ2wQs",
                         },
                     ]
                 },
