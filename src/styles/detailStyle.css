@@ -150,6 +150,9 @@
         width: 80%;
         position: inherit;
     }
+    .jour{
+        justify-content: center;
+    }
     
     .containerD {
         display: flex;

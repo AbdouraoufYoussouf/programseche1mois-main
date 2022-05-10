@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowDown, faBars, faCalendar, faCaretDown, faCaretRight, faCarRear, faCheckCircle, faListDots, faListSquares, faTimeline, faTimes, faTimesCircle, faUpDownLeftRight } from '@fortawesome/free-solid-svg-icons'
 
-import { NavbarCont, MenuIcon, Madal, Left, Right, Ul } from './navstyle'
+import { NavbarCont, MenuIcon, Madal, Left, Right, Ul, ContainerModal } from './navstyle'
 
 export default function NavBar() {
     const [click, setClick] = useState(false);
@@ -29,7 +29,7 @@ export default function NavBar() {
                         navBar.map((item, index) => {
                             return (
                                 <li >
-                                    <NavLink  key={index} to={item.route} className={(nav) => nav.isActive ? 'actived' : 'navlink'} >
+                                    <NavLink key={index} to={item.route} className={(nav) => nav.isActive ? 'actived' : 'navlink'} >
                                         {item.titre}
                                     </NavLink>
                                 </li>
@@ -46,22 +46,24 @@ export default function NavBar() {
                 </MenuIcon>
                 {
                     click ?
+                        <ContainerModal onClick={()=> setClick(false)}>
 
-                        <Madal>
-                            <Ul display='flex'>
-                                {
-                                    navBar.map((item, index) => {
-                                        return (
-                                            <li onClick={handleClick}>
-                                                <NavLink key={index} to={item.route} className={(nav) => nav.isActive ? 'actived' : 'navlink'} >
-                                                    {item.titre}
-                                                </NavLink>
-                                            </li>
-                                        )
-                                    })
-                                }
-                            </Ul>
-                        </Madal>
+                            <Madal onClick={()=> setClick(true)}>
+                                <Ul display='flex' >
+                                    {
+                                        navBar.map((item, index) => {
+                                            return (
+                                                <li >
+                                                    <NavLink onClick={handleClick} key={index} to={item.route} className={(nav) => nav.isActive ? 'actived' : 'navlink'} >
+                                                        {item.titre}
+                                                    </NavLink>
+                                                </li>
+                                            )
+                                        })
+                                    }
+                                </Ul>
+                            </Madal>
+                        </ContainerModal>
                         : <></>
                 }
 

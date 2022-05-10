@@ -16,6 +16,7 @@ export const NavbarCont = styled.div`
    
     @media screen and (max-width:945px) {
       justify-content: space-between;
+      
 
     }
 `;
@@ -39,7 +40,6 @@ export const Left = styled.div`
     }
 `;
 export const Right = styled.div`
-    
   .actived{
     color: #1888ff;
     font-size: 20px;
@@ -71,7 +71,6 @@ export const Ul = styled.ul`
   }
   @media screen and (max-width:945px) {
     display: ${props => props.display};;
-    justify-content: start;
     flex-direction: column;
     position: absolute;
     right: 0;
@@ -81,6 +80,7 @@ export const Ul = styled.ul`
     li{
       list-style: none;
       margin-right: 20px;
+      margin-bottom: 10px;
     }
   }
 `;
@@ -102,6 +102,15 @@ export const MenuIcon = styled.div`
       cursor: pointer;
     }
 `;
+export const ContainerModal = styled.div`
+ 
+   width: 100%;
+   height: 100vh;
+   background-color: rgba(0, 0, 0, 0.5);  
+   //background-color: red;
+   position: absolute;
+   top: 60px;
+`;
 export const Madal = styled.div`
    border-bottom-right-radius: 25px;
    border-bottom-left-radius: 25px;
@@ -110,6 +119,6 @@ export const Madal = styled.div`
    background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%); 
    position: absolute;
    right: 0;
-   top: 60px;
+   top: 0px;
    
 `;
