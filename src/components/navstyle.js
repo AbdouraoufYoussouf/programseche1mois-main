@@ -38,6 +38,13 @@ export const Left = styled.div`
       top: 1px;
       left: 0;
     }
+    @media screen and (max-width:505px) {
+      span{
+        text-align: center;
+        font-size: 30px;
+        
+    }
+    }
 `;
 export const Right = styled.div`
   .actived{

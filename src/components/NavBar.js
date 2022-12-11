@@ -12,8 +12,6 @@ export default function NavBar() {
         setClick(!click);
     }
 
-
-
     const navBar = [
         { id: 1, titre: 'Home', route: '/' },
         { id: 1, titre: 'Boutique', route: 'boutique' },

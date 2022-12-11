@@ -152,6 +152,7 @@
     }
     .jour{
         justify-content: center;
+        color: red;
     }
     
     .containerD {
@@ -206,6 +207,10 @@
         .contAcordon{
             width: 80%;
         }
+        .jour{
+            justify-content: center;
+            margin-left: 53px;
+        }
         
     }
     @media screen and (max-width:500px) {
@@ -223,6 +228,10 @@
         }
         .contAcordon{
             width: 80%;
+        }
+        .jour{
+            justify-content: center;
+            margin-left: 53px;
         }
         
     }
