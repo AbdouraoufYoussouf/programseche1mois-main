@@ -1,13 +1,13 @@
 import { Route, Routes } from 'react-router-dom';
 import React from 'react';
 import './App.css';
-import { Details } from './pages/Details';
-import Home from './pages/Home';
-import { Program } from './pages/Program';
 import { Boutique } from './pages/boutique/Boutique';
 import { Provider } from 'react-redux';
 import { store } from './Redux/Store';
 import NavBar from './components/NavBar';
+import Home from './pages/sport/Home';
+import { Details } from './pages/sport/program/Details';
+import { Program } from './pages/sport/program/Program';
 
 function App() {
   return (

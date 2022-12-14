@@ -1,9 +1,9 @@
 import React from 'react'
 import {useParams,Link, useLocation } from "react-router-dom";
-import '../styles/stylesHome.css'
-import raf from '../images/raf.jpg';
-import Card from '../components/Card';
+import '../../styles/stylesHome.css'
+import raf from '../../images/raf.jpg';
 import { useSelector } from 'react-redux';
+import Card from '../../components/Card';
 
 export default function Home() {
     const Seche = useSelector((state)=> state.secheState)

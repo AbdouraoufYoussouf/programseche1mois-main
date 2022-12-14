@@ -8,9 +8,10 @@ var Data = [
         "nom": 'Seche du coprs pour un mois',
         "semaine": [
             {
-                id: 1,
-                titre: "Jours 1 à 5",
+                "id": 1,
+                "titre": "Jours 1 à 5",
                 "photo": doc,
+                "evolution":10,
                 "intro": <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'self-start' }}>
                     <h2>Tout Commence Maintenant ! 🔥</h2>
                     <p>Ça y est, c'est le moment de te lancer ! La marche à suivre est simple :</p>
@@ -29,8 +30,11 @@ var Data = [
                     {
                         "id": 1,
                         "nom": "JOUR 1",
+                        "idSBloc": 1,
+                        "evolutionBloc": 20,
+                        "select": false,
                         "dure": "37min",
-                        'desc': "Cette séance travaille principalement les pecs et les abdominux.",
+                        'desc': "Cette séance travaille principalement les pecs et les abdominaux.",
                         "routines": [
                             {
                                 "id": 1,
@@ -56,6 +60,9 @@ var Data = [
                     {
                         "id": 2,
                         "nom": "JOUR 2",
+                        "idSBloc": 1,
+                        "evolutionBloc": 20,
+                        "select": true,
                         "dure": "20min",
                         'desc': "Dans cette séance normalement on devrait faire repos mais à notre maniere on va juste faire un peu de souplesse, tout en aidant à améliorer sa posture.",
                         "routines": [
@@ -70,6 +77,9 @@ var Data = [
                     {
                         "id": 3,
                         "nom": "JOUR 3",
+                        "idSBloc": 1,
+                        "evolutionBloc": 20,
+                        "select": false,
                         "dure": "57min",
                         'desc': "Cette dernière séance travaille principalement les épaules et le dos, tout en aidant à améliorer sa posture.",
                         "routines": [
@@ -96,6 +106,9 @@ var Data = [
                     {
                         "id": 4,
                         "nom": "JOUR 4",
+                        "idSBloc": 1,
+                        "evolutionBloc": 20,
+                        "select": true,
                         "dure": "45min",
                         'desc': "Cette dernière séance travaille principalement les épaules et le dos, tout en aidant à améliorer sa posture.",
                         "routines": [
@@ -121,6 +134,9 @@ var Data = [
                     {
                         "id": 5,
                         "nom": "JOUR 5",
+                        "idSBloc": 1,
+                        "evolutionBloc": 20,
+                        "select": true,
                         "dure": "20min",
                         'desc': "Dans cette séance normalement on devrait faire repos mais à notre maniere on va juste faire un peu de souplesse, tout en aidant à améliorer sa posture.",
                         "routines": [
@@ -151,33 +167,39 @@ var Data = [
                 </div>,
                 "soustitres": [
                     {
-                "id": 1,
-                "nom": "JOUR 6",
-                "dure": "54min",
-                'desc': "Cette dernière séance travaille principalement les épaules et le dos, tout en aidant à améliorer sa posture.",
-                "routines": [
-                    {
                         "id": 1,
-                        "titre": '1- Echauffement',
-                        "url": 'https://www.youtube.com/embed/pcgzgl8b5C8',
-                    },
-                    {
-                        "id": 2,
-                        "titre": '2- Abdominaux X 2',
-                        "url": "https://www.youtube.com/embed/FyKwAWz9nV8",
-                    },
-                    {
-                        "id": 3,
-                        "titre": '3- Bas Du coprs X 2',
-                        "url": "https://www.youtube.com/embed/G2NWfxVM8jg",
-                    },
+                        "nom": "JOUR 6",
+                        "idSBloc": 1,
+                        "evolutionBloc": 20,
+                        "select": true,
+                        "dure": "54min",
+                        'desc': "Cette dernière séance travaille principalement les épaules et le dos, tout en aidant à améliorer sa posture.",
+                        "routines": [
+                            {
+                                "id": 1,
+                                "titre": '1- Echauffement',
+                                "url": 'https://www.youtube.com/embed/pcgzgl8b5C8',
+                            },
+                            {
+                                "id": 2,
+                                "titre": '2- Abdominaux X 2',
+                                "url": "https://www.youtube.com/embed/FyKwAWz9nV8",
+                            },
+                            {
+                                "id": 3,
+                                "titre": '3- Bas Du coprs X 2',
+                                "url": "https://www.youtube.com/embed/G2NWfxVM8jg",
+                            },
 
-                ]
-            },
+                        ]
+                    },
 
                     {
                         "id": 2,
                         "nom": "JOUR 7",
+                        "idSBloc": 1,
+                        "evolutionBloc": 20,
+                        "select": true,
                         "dure": "60min",
                         'desc': "Cette dernière séance travaille principalement les épaules et le dos, tout en aidant à améliorer sa posture.",
                         "routines": [
@@ -202,6 +224,9 @@ var Data = [
                     {
                         "id": 3,
                         "nom": "JOUR 8",
+                        "idSBloc": 1,
+                        "evolutionBloc": 20,
+                        "select": true,
                         "dure": "1h05min",
                         'desc': "Cette dernière séance travaille principalement les épaules et le dos, tout en aidant à améliorer sa posture.",
                         "routines": [
@@ -217,6 +242,9 @@ var Data = [
                     {
                         "id": 4,
                         "nom": "JOUR 9",
+                        "idSBloc": 1,
+                        "evolutionBloc": 20,
+                        "select": true,
                         "dure": "1h05min",
                         'desc': "Cette dernière séance travaille principalement les épaules et le dos, tout en aidant à améliorer sa posture.",
                         "routines": [
@@ -258,7 +286,7 @@ var Data = [
                                 "titre": 'Souplesse',
                                 "url": "https://www.youtube.com/embed/NqVSG7Bmc24",
                             },
-                          
+
                         ]
                     },
 
@@ -274,116 +302,131 @@ var Data = [
 
 
                 </div>,
-            "soustitres": [
-                {
-                    "id": 1,
-                    "nom": "JOUR 11",
-                    "dure": "37min",
-                    'desc': "Cette séance travaille principalement les pecs et les abdominux.",
-                    "routines": [
-                        {
-                            "id": 1,
-                            "titre": 'Echauffement',
-                            "url": 'https://www.youtube.com/embed/pcgzgl8b5C8',
-                        },
-                        {
-                            "id": 2,
-                            "titre": 'Bas du Coprs X2',
-                            "url": "https://www.youtube.com/embed/q7rCeOa_m58",
-                        },
-                        {
-                            "id": 3,
-                            "titre": 'Abdominaux',
-                            "url": "https://www.youtube.com/embed/XgI_p8bKg78",
-                        },
-                    ]
-                },
+                "soustitres": [
+                    {
+                        "id": 1,
+                        "nom": "JOUR 11",
+                        "idSBloc": 1,
+                        "evolutionBloc": 20,
+                        "select": true,
+                        "dure": "37min",
+                        'desc': "Cette séance travaille principalement les pecs et les abdominux.",
+                        "routines": [
+                            {
+                                "id": 1,
+                                "titre": 'Echauffement',
+                                "url": 'https://www.youtube.com/embed/pcgzgl8b5C8',
+                            },
+                            {
+                                "id": 2,
+                                "titre": 'Bas du Coprs X2',
+                                "url": "https://www.youtube.com/embed/q7rCeOa_m58",
+                            },
+                            {
+                                "id": 3,
+                                "titre": 'Abdominaux',
+                                "url": "https://www.youtube.com/embed/XgI_p8bKg78",
+                            },
+                        ]
+                    },
 
-                {
-                    "id": 2,
-                    "nom": "JOUR 12",
-                    "dure": "20min",
-                    'desc': "Dans cette séance normalement on devrait faire repos mais à notre maniere on va juste faire un peu de souplesse, tout en aidant à améliorer sa posture.",
-                    "routines": [
-                        {
-                            "id": 1,
-                            "titre": '1- Souplesse',
-                            "url": "https://www.youtube.com/embed/xvrWZk6ZekQ",
-                        },
-                    ]
-                },
+                    {
+                        "id": 2,
+                        "nom": "JOUR 12",
+                        "idSBloc": 1,
+                        "evolutionBloc": 20,
+                        "select": true,
+                        "dure": "20min",
+                        'desc': "Dans cette séance normalement on devrait faire repos mais à notre maniere on va juste faire un peu de souplesse, tout en aidant à améliorer sa posture.",
+                        "routines": [
+                            {
+                                "id": 1,
+                                "titre": '1- Souplesse',
+                                "url": "https://www.youtube.com/embed/xvrWZk6ZekQ",
+                            },
+                        ]
+                    },
 
-                {
-                    "id": 3,
-                    "nom": "JOUR 13",
-                    "dure": "57min",
-                    'desc': "Cette dernière séance travaille principalement les épaules et le dos, tout en aidant à améliorer sa posture.",
-                    "routines": [
-                        {
-                            "id": 1,
-                            "titre": '1- Echauffement',
-                            "url": 'https://www.youtube.com/embed/pcgzgl8b5C8',
-                        },
-                        {
-                            "id": 2,
-                            "titre": '2- Haut du cops X 2',
-                            "url": "https://www.youtube.com/embed/aI9VbuedMLI",
-                        },
-                        {
-                            "id": 3,
-                            "titre": '3- Epaules X 2',
-                            "url": "https://www.youtube.com/embed/n4fsXXfU5jY",
-                        },
+                    {
+                        "id": 3,
+                        "nom": "JOUR 13",
+                        "idSBloc": 1,
+                        "evolutionBloc": 20,
+                        "select": true,
+                        "dure": "57min",
+                        'desc': "Cette dernière séance travaille principalement les épaules et le dos, tout en aidant à améliorer sa posture.",
+                        "routines": [
+                            {
+                                "id": 1,
+                                "titre": '1- Echauffement',
+                                "url": 'https://www.youtube.com/embed/pcgzgl8b5C8',
+                            },
+                            {
+                                "id": 2,
+                                "titre": '2- Haut du cops X 2',
+                                "url": "https://www.youtube.com/embed/aI9VbuedMLI",
+                            },
+                            {
+                                "id": 3,
+                                "titre": '3- Epaules X 2',
+                                "url": "https://www.youtube.com/embed/n4fsXXfU5jY",
+                            },
 
 
-                    ]
-                },
+                        ]
+                    },
 
-                {
-                    "id": 4,
-                    "nom": "JOUR 14",
-                    "dure": "45min",
-                    'desc': "Cette dernière séance travaille principalement les épaules et le dos, tout en aidant à améliorer sa posture.",
-                    "routines": [
-                        {
-                            "id": 1,
-                            "titre": '1- Echauffement',
-                            "url": 'https://www.youtube.com/embed/pcgzgl8b5C8',
-                        },
-                        {
-                            "id": 2,
-                            "titre": '2- Cardio',
-                            "url": "https://www.youtube.com/embed/7sO5tFIoB7k",
-                        },
-                        {
-                            "id": 3,
-                            "titre": '4- Abdominaux X 2',
-                            "url": "https://www.youtube.com/embed/fNO30pPBZDo",
-                        },
+                    {
+                        "id": 4,
+                        "nom": "JOUR 14",
+                        "idSBloc": 1,
+                        "evolutionBloc": 20,
+                        "select": true,
+                        "dure": "45min",
+                        'desc': "Cette dernière séance travaille principalement les épaules et le dos, tout en aidant à améliorer sa posture.",
+                        "routines": [
+                            {
+                                "id": 1,
+                                "titre": '1- Echauffement',
+                                "url": 'https://www.youtube.com/embed/pcgzgl8b5C8',
+                            },
+                            {
+                                "id": 2,
+                                "titre": '2- Cardio',
+                                "url": "https://www.youtube.com/embed/7sO5tFIoB7k",
+                            },
+                            {
+                                "id": 3,
+                                "titre": '4- Abdominaux X 2',
+                                "url": "https://www.youtube.com/embed/fNO30pPBZDo",
+                            },
 
-                    ]
-                },
+                        ]
+                    },
 
-                {
-                    "id": 5,
-                    "nom": "JOUR 15",
-                    "dure": "20min",
-                    'desc': "Dans cette séance normalement on devrait faire repos mais à notre maniere on va juste faire un peu de souplesse, tout en aidant à améliorer sa posture.",
-                    "routines": [
-                        {
-                            "id": 1,
-                            "titre": '1- Souplesse',
-                            "url": "https://www.youtube.com/embed/WjsQc9GUBW0?start=343",
-                        },
-                        {
-                            "id": 2,
-                            "titre": ' Ou ça pour aller plus loins',
-                            "url": "https://www.youtube.com/embed/RN7zy6WWu24?start=343",
-                        },
-                    ]
-                },
+                    {
+                        "id": 5,
+                        "nom": "JOUR 15",
+                        "idSBloc": 1,
+                        "evolutionBloc": 20,
+                        "select": true,
+                        "dure": "20min",
+                        'desc': "Dans cette séance normalement on devrait faire repos mais à notre maniere on va juste faire un peu de souplesse, tout en aidant à améliorer sa posture.",
+                        "routines": [
+                            {
+                                "id": 1,
+                                "titre": '1- Souplesse',
+                                "url": "https://www.youtube.com/embed/WjsQc9GUBW0?start=343",
+                            },
+                            {
+                                "id": 2,
+                                "titre": ' Ou ça pour aller plus loins',
+                                "url": "https://www.youtube.com/embed/RN7zy6WWu24?start=343",
+                            },
+                        ]
+                    },
 
-            ],
+                ],
             },
             {
                 id: 4,
@@ -399,6 +442,9 @@ var Data = [
                     {
                         "id": 1,
                         "nom": "JOUR 16",
+                        "idSBloc": 1,
+                        "evolutionBloc": 20,
+                        "select": true,
                         "dure": "30min",
                         'desc': "Cette dernière séance travaille principalement les épaules et le dos, tout en aidant à améliorer sa posture.",
                         "routines": [
@@ -423,6 +469,9 @@ var Data = [
                     {
                         "id": 2,
                         "nom": "JOUR 17",
+                        "idSBloc": 1,
+                        "evolutionBloc": 20,
+                        "select": true,
                         "dure": "1h20",
                         'desc': "Cette dernière séance travaille principalement les épaules et le dos, tout en aidant à améliorer sa posture.",
                         "routines": [
@@ -447,6 +496,9 @@ var Data = [
                     {
                         "id": 3,
                         "nom": "JOUR 18",
+                        "idSBloc": 1,
+                        "evolutionBloc": 20,
+                        "select": true,
                         "dure": "50min",
                         'desc': "Cette dernière séance travaille principalement les épaules et le dos, tout en aidant à améliorer sa posture.",
                         "routines": [
@@ -472,6 +524,9 @@ var Data = [
                     {
                         "id": 4,
                         "nom": "JOUR 19",
+                        "idSBloc": 1,
+                        "evolutionBloc": 20,
+                        "select": true,
                         "dure": "30min",
                         'desc': "Cette dernière séance travaille principalement les épaules et le dos, tout en aidant à améliorer sa posture.",
                         "routines": [
@@ -532,6 +587,9 @@ var Data = [
                     {
                         "id": 1,
                         "nom": "JOUR 21",
+                        "idSBloc": 1,
+                        "evolutionBloc": 20,
+                        "select": true,
                         "dure": "30min",
                         'desc': "Cette dernière séance travaille principalement les épaules et le dos, tout en aidant à améliorer sa posture.",
                         "routines": [
@@ -556,6 +614,9 @@ var Data = [
                     {
                         "id": 2,
                         "nom": "JOUR 22",
+                        "idSBloc": 1,
+                        "evolutionBloc": 20,
+                        "select": true,
                         "dure": "1h20",
                         'desc': "Cette dernière séance travaille principalement les épaules et le dos, tout en aidant à améliorer sa posture.",
                         "routines": [
@@ -580,6 +641,9 @@ var Data = [
                     {
                         "id": 3,
                         "nom": "JOUR 23",
+                        "idSBloc": 1,
+                        "evolutionBloc": 20,
+                        "select": true,
                         "dure": "50min",
                         'desc': "Cette dernière séance travaille principalement les épaules et le dos, tout en aidant à améliorer sa posture.",
                         "routines": [
@@ -605,6 +669,9 @@ var Data = [
                     {
                         "id": 4,
                         "nom": "JOUR 24",
+                        "idSBloc": 1,
+                        "evolutionBloc": 20,
+                        "select": true,
                         "dure": "30min",
                         'desc': "Cette dernière séance travaille principalement les épaules et le dos, tout en aidant à améliorer sa posture.",
                         "routines": [
@@ -663,6 +730,9 @@ var Data = [
                     {
                         "id": 1,
                         "nom": "JOUR 26",
+                        "idSBloc": 1,
+                        "evolutionBloc": 20,
+                        "select": true,
                         "dure": "30min",
                         'desc': "Cette dernière séance travaille principalement les épaules et le dos, tout en aidant à améliorer sa posture.",
                         "routines": [
@@ -687,6 +757,9 @@ var Data = [
                     {
                         "id": 2,
                         "nom": "JOUR 27",
+                        "idSBloc": 1,
+                        "evolutionBloc": 20,
+                        "select": true,
                         "dure": "1h20",
                         'desc': "Cette dernière séance travaille principalement les épaules et le dos, tout en aidant à améliorer sa posture.",
                         "routines": [
@@ -711,6 +784,9 @@ var Data = [
                     {
                         "id": 3,
                         "nom": "JOUR 28",
+                        "idSBloc": 1,
+                        "evolutionBloc": 20,
+                        "select": true,
                         "dure": "50min",
                         'desc': "Cette dernière séance travaille principalement les épaules et le dos, tout en aidant à améliorer sa posture.",
                         "routines": [
@@ -736,6 +812,9 @@ var Data = [
                     {
                         "id": 4,
                         "nom": "JOUR 29",
+                        "idSBloc": 1,
+                        "evolutionBloc": 20,
+                        "select": true,
                         "dure": "30min",
                         'desc': "Cette dernière séance travaille principalement les épaules et le dos, tout en aidant à améliorer sa posture.",
                         "routines": [

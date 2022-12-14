@@ -1,14 +1,13 @@
 import React, { useEffect, useState } from 'react'
-import '../styles/programStyle.css'
-import doc from '../images/doc.PNG';
+import '../../../styles/programStyle.css'
+import doc from '../../../images/doc.PNG';
 import { Link, } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faListSquares } from '@fortawesome/free-solid-svg-icons'
 import { useSelector } from 'react-redux';
-import CircularProgresse from '../components/CircularProgress';
-import { LinearProgress } from '../components/LinearProgress';
-import { Checkbox } from '@mui/material';
-import { pink } from '@mui/material/colors';
+import CircularProgresse from '../../../components/CircularProgress';
+import { LinearProgress } from '../../../components/LinearProgress';
+
 
 
 export const Program = () => {

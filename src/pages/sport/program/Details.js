@@ -1,12 +1,10 @@
 import React, { useState } from 'react'
-import '../styles/detailStyle.css'
+import '../../../styles/detailStyle.css'
 import { NavLink, useParams } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCalendar, faCarRear, faCheckCircle, faListDots, faListSquares } from '@fortawesome/free-solid-svg-icons'
 import { useSelector } from 'react-redux';
-import { Accordion } from '../components/Accordion';
-import Checkboxe from '../components/CheckBox';
-import { LinearProgress } from '../components/LinearProgress';
+import { Accordion } from '../../../components/Accordion';
+import Checkboxe from '../../../components/CheckBox';
+import { LinearProgress } from '../../../components/LinearProgress';
 
 
 export const Details = () => {
@@ -37,7 +35,7 @@ const [checked, setChecked] = React.useState(false);
           {
             semaine.map((item, index) => {
               return (
-                <Accordion key={index} titre={item.titre} index={index} id={item.id} idP={idP} soustitres={item.soustitres} />
+                <Accordion key={index} item={item} idP={idP} />
               )
             })
           }

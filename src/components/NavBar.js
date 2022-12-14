@@ -26,8 +26,8 @@ export default function NavBar() {
                     {
                         navBar.map((item, index) => {
                             return (
-                                <li >
-                                    <NavLink key={index} to={item.route} className={(nav) => nav.isActive ? 'actived' : 'navlink'} >
+                                <li key={index}>
+                                    <NavLink  to={item.route} className={(nav) => nav.isActive ? 'actived' : 'navlink'} >
                                         {item.titre}
                                     </NavLink>
                                 </li>
