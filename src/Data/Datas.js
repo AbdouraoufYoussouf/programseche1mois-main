@@ -273,7 +273,8 @@ var Data = [
 
                     {
                         "id": 5,
-                        "nom": "JOUR 10",
+                        "nom": "JOUR 10","evolutionBloc": 20,
+                        "select": true,
                         "desc": "Cette dernière séance on va juste se reposé un peu pour laisser le coprs recuperer en faisant juste 20 minutes de souplesse",
                         "routines": [
                             {
@@ -550,7 +551,8 @@ var Data = [
 
                     {
                         "id": 5,
-                        "nom": "JOUR 20",
+                        "nom": "JOUR 20","evolutionBloc": 20,
+                        "select": true,
                         "desc": "Cette dernière séance travaille principalement les épaules et le dos, tout en aidant à améliorer sa posture.",
                         "routines": [
                             {
@@ -695,7 +697,8 @@ var Data = [
 
                     {
                         "id": 5,
-                        "nom": "JOUR 25",
+                        "nom": "JOUR 25","evolutionBloc": 20,
+                        "select": true,
                         "desc": "Cette dernière séance travaille principalement les épaules et le dos, tout en aidant à améliorer sa posture.",
                         "routines": [
                             {
@@ -838,7 +841,8 @@ var Data = [
 
                     {
                         "id": 5,
-                        "nom": "JOUR 30",
+                        "nom": "JOUR 30","evolutionBloc": 20,
+                        "select": true,
                         "desc": "Cette dernière séance travaille principalement les épaules et le dos, tout en aidant à améliorer sa posture.",
                         "routines": [
                             {
