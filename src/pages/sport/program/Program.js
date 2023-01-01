@@ -34,28 +34,23 @@ export const Program = () => {
         }
       })
     );
-    const sumEvolution = sousBlocs.map(item => item.evolutionBloc).reduce((prev, curr) => prev + curr, 0);
-      setToalEvolution(sumEvolution)
-    setPourcentage(sumEvolution)
+ 
 
   }, []);
 
-  const [pourcentage, setPourcentage] = useState('50')
-  const Seche = useSelector((state) => state.secheState)
-  const Data = Seche.seche
-  const prSemaine = Data.find(d => d.id === 1)
-  const semaine = prSemaine.semaine
+  const Data = useSelector((state) => state.secheState.seche)
+  const semaine = Data[0].semaine
   //console.log(semaine)
 
   return (
     <div className='containerP'>
       <h1 className='title1' >Le program 30 jours de routines</h1>
       <div className='leftP'>
-        <img src={doc} alt="image" />
+        <img src={Data[0].photo} alt="image" />
         <h3>Transformation Faite Maison</h3>
         <div style={{ display: 'flex', flexDirection: 'column', width: '100%' }}>
-          <LinearProgress widthL='100%' widthP={pourcentage + '%'} />
-          <h1 style={{ fontSize: 40, textAlign: 'center' }}>{pourcentage} %</h1>
+          <LinearProgress widthL='100%' widthP={Data[0].evolutionTotal + '%'} />
+          <h1 style={{ fontSize: 40, textAlign: 'center' }}>{Data[0].evolutionTotal} %</h1>
         </div>
       </div>
       <div className='contentP'>
@@ -65,7 +60,7 @@ export const Program = () => {
           semaine.map((item, index) => {
             return (
               <Link key={item.id} to={'detail/' + item.id} className='itemp'>
-                <CircularProgresse progress={70} />
+                <CircularProgresse progress={item.evolution} />
                 <FontAwesomeIcon style={{ marginLeft: 10 }} icon={faListSquares} color='white' size="lg" />
 
                 <div key={index} className='leson'>

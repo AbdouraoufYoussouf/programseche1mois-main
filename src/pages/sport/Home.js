@@ -6,6 +6,54 @@ import { useSelector } from 'react-redux';
 import Card from '../../components/Card';
 
 export default function Home() {
+
+    const caddie = [
+        {
+          id:1,
+          blocEvol:50,
+          soutitres:[
+            {book:1,price:20},
+            {beer:6,price:20},
+            {breas:2,price:20},
+            {breas:2,price:20},
+            {beach:8,price:20}
+          ]
+        },
+        {
+          id:2,
+          blocEvol:50,
+          soutitres:[
+            {book:1,price:20},
+            {beer:6,price:20},
+            {breas:2,price:20},
+            {breas:2,price:20},
+            {beach:8,price:20}
+          ]
+        },
+      ];
+      
+      console.log('debut du calcul')
+      
+      const total =  caddie.map((acc,index)=>{
+        let result = {total:0,sumbloc:0}
+        let item=acc.soutitres
+        let tot =0
+        
+        let sum = item.reduce((accs,curs)=>{
+            accs+=curs.price
+            return accs
+        }, 0 )
+
+        tot +=sum
+        console.log('resultat bloc',acc)
+
+        result={total:tot,sumbloc:sum}
+        return result
+    },0)
+    
+    console.log('Total ',total)
+
+
     const Seche = useSelector((state)=> state.secheState)
     const Data = Seche.seche
     //console.log(Data)

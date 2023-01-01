@@ -6,6 +6,7 @@ var Data = [
         "photo": doc,
         "categorie": 'Calistenics',
         "nom": 'Seche du coprs pour un mois',
+        "evolutionTotal":20,
         "semaine": [
             {
                 "id": 1,
@@ -32,7 +33,7 @@ var Data = [
                         "nom": "JOUR 1",
                         "idSBloc": 1,
                         "evolutionBloc": 20,
-                        "select": false,
+                        "select": true,
                         "dure": "37min",
                         'desc': "Cette séance travaille principalement les pecs et les abdominaux.",
                         "routines": [
@@ -108,7 +109,7 @@ var Data = [
                         "nom": "JOUR 4",
                         "idSBloc": 1,
                         "evolutionBloc": 20,
-                        "select": true,
+                        "select": false,
                         "dure": "45min",
                         'desc': "Cette dernière séance travaille principalement les épaules et le dos, tout en aidant à améliorer sa posture.",
                         "routines": [
@@ -136,7 +137,7 @@ var Data = [
                         "nom": "JOUR 5",
                         "idSBloc": 1,
                         "evolutionBloc": 20,
-                        "select": true,
+                        "select": false,
                         "dure": "20min",
                         'desc': "Dans cette séance normalement on devrait faire repos mais à notre maniere on va juste faire un peu de souplesse, tout en aidant à améliorer sa posture.",
                         "routines": [
@@ -159,6 +160,7 @@ var Data = [
                 id: 2,
                 titre: "Jours 6 à 10",
                 "photo": doc,
+                "evolution":10,
                 "intro": <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'self-start' }}>
                     <h2>Tiens bon ,on y est ! 🔥</h2>
                     <p>tu est si pret du bute</p>
@@ -171,7 +173,7 @@ var Data = [
                         "nom": "JOUR 6",
                         "idSBloc": 1,
                         "evolutionBloc": 20,
-                        "select": true,
+                        "select": false,
                         "dure": "54min",
                         'desc': "Cette dernière séance travaille principalement les épaules et le dos, tout en aidant à améliorer sa posture.",
                         "routines": [
@@ -199,7 +201,7 @@ var Data = [
                         "nom": "JOUR 7",
                         "idSBloc": 1,
                         "evolutionBloc": 20,
-                        "select": true,
+                        "select": false,
                         "dure": "60min",
                         'desc': "Cette dernière séance travaille principalement les épaules et le dos, tout en aidant à améliorer sa posture.",
                         "routines": [
@@ -226,7 +228,7 @@ var Data = [
                         "nom": "JOUR 8",
                         "idSBloc": 1,
                         "evolutionBloc": 20,
-                        "select": true,
+                        "select": false,
                         "dure": "1h05min",
                         'desc': "Cette dernière séance travaille principalement les épaules et le dos, tout en aidant à améliorer sa posture.",
                         "routines": [
@@ -244,7 +246,7 @@ var Data = [
                         "nom": "JOUR 9",
                         "idSBloc": 1,
                         "evolutionBloc": 20,
-                        "select": true,
+                        "select": false,
                         "dure": "1h05min",
                         'desc': "Cette dernière séance travaille principalement les épaules et le dos, tout en aidant à améliorer sa posture.",
                         "routines": [
@@ -274,7 +276,7 @@ var Data = [
                     {
                         "id": 5,
                         "nom": "JOUR 10","evolutionBloc": 20,
-                        "select": true,
+                        "select": false,
                         "desc": "Cette dernière séance on va juste se reposé un peu pour laisser le coprs recuperer en faisant juste 20 minutes de souplesse",
                         "routines": [
                             {
@@ -297,6 +299,7 @@ var Data = [
                 id: 3,
                 titre: "Jours 11 à 15",
                 "photo": doc,
+                "evolution":10,
                 "intro": <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'self-start' }}>
                     <h2>Tiens bon ,on y est ! 🔥</h2>
                     <p>tu est si pret du bute</p>
@@ -309,7 +312,7 @@ var Data = [
                         "nom": "JOUR 11",
                         "idSBloc": 1,
                         "evolutionBloc": 20,
-                        "select": true,
+                        "select": false,
                         "dure": "37min",
                         'desc': "Cette séance travaille principalement les pecs et les abdominux.",
                         "routines": [
@@ -336,7 +339,7 @@ var Data = [
                         "nom": "JOUR 12",
                         "idSBloc": 1,
                         "evolutionBloc": 20,
-                        "select": true,
+                        "select": false,
                         "dure": "20min",
                         'desc': "Dans cette séance normalement on devrait faire repos mais à notre maniere on va juste faire un peu de souplesse, tout en aidant à améliorer sa posture.",
                         "routines": [
@@ -353,7 +356,7 @@ var Data = [
                         "nom": "JOUR 13",
                         "idSBloc": 1,
                         "evolutionBloc": 20,
-                        "select": true,
+                        "select": false,
                         "dure": "57min",
                         'desc': "Cette dernière séance travaille principalement les épaules et le dos, tout en aidant à améliorer sa posture.",
                         "routines": [
@@ -382,7 +385,7 @@ var Data = [
                         "nom": "JOUR 14",
                         "idSBloc": 1,
                         "evolutionBloc": 20,
-                        "select": true,
+                        "select": false,
                         "dure": "45min",
                         'desc': "Cette dernière séance travaille principalement les épaules et le dos, tout en aidant à améliorer sa posture.",
                         "routines": [
@@ -410,7 +413,7 @@ var Data = [
                         "nom": "JOUR 15",
                         "idSBloc": 1,
                         "evolutionBloc": 20,
-                        "select": true,
+                        "select": false,
                         "dure": "20min",
                         'desc': "Dans cette séance normalement on devrait faire repos mais à notre maniere on va juste faire un peu de souplesse, tout en aidant à améliorer sa posture.",
                         "routines": [
@@ -433,6 +436,7 @@ var Data = [
                 id: 4,
                 titre: "Jours 16 à 20",
                 "photo": doc,
+                "evolution":10,
                 "intro": <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'self-start' }}>
                     <h2>Tiens bon ,on y est ! 🔥</h2>
                     <p>tu est si pret du bute</p>
@@ -445,7 +449,7 @@ var Data = [
                         "nom": "JOUR 16",
                         "idSBloc": 1,
                         "evolutionBloc": 20,
-                        "select": true,
+                        "select": false,
                         "dure": "30min",
                         'desc': "Cette dernière séance travaille principalement les épaules et le dos, tout en aidant à améliorer sa posture.",
                         "routines": [
@@ -472,7 +476,7 @@ var Data = [
                         "nom": "JOUR 17",
                         "idSBloc": 1,
                         "evolutionBloc": 20,
-                        "select": true,
+                        "select": false,
                         "dure": "1h20",
                         'desc': "Cette dernière séance travaille principalement les épaules et le dos, tout en aidant à améliorer sa posture.",
                         "routines": [
@@ -499,7 +503,7 @@ var Data = [
                         "nom": "JOUR 18",
                         "idSBloc": 1,
                         "evolutionBloc": 20,
-                        "select": true,
+                        "select": false,
                         "dure": "50min",
                         'desc': "Cette dernière séance travaille principalement les épaules et le dos, tout en aidant à améliorer sa posture.",
                         "routines": [
@@ -527,7 +531,7 @@ var Data = [
                         "nom": "JOUR 19",
                         "idSBloc": 1,
                         "evolutionBloc": 20,
-                        "select": true,
+                        "select": false,
                         "dure": "30min",
                         'desc': "Cette dernière séance travaille principalement les épaules et le dos, tout en aidant à améliorer sa posture.",
                         "routines": [
@@ -552,7 +556,7 @@ var Data = [
                     {
                         "id": 5,
                         "nom": "JOUR 20","evolutionBloc": 20,
-                        "select": true,
+                        "select": false,
                         "desc": "Cette dernière séance travaille principalement les épaules et le dos, tout en aidant à améliorer sa posture.",
                         "routines": [
                             {
@@ -579,6 +583,7 @@ var Data = [
                 id: 5,
                 titre: "Jours 21 à 25",
                 "photo": doc,
+                "evolution":10,
                 "intro": <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'self-start' }}>
                     <h2>Tiens bon ,on y est ! 🔥</h2>
                     <p>tu est si pret du bute</p>
@@ -591,7 +596,7 @@ var Data = [
                         "nom": "JOUR 21",
                         "idSBloc": 1,
                         "evolutionBloc": 20,
-                        "select": true,
+                        "select": false,
                         "dure": "30min",
                         'desc': "Cette dernière séance travaille principalement les épaules et le dos, tout en aidant à améliorer sa posture.",
                         "routines": [
@@ -618,7 +623,7 @@ var Data = [
                         "nom": "JOUR 22",
                         "idSBloc": 1,
                         "evolutionBloc": 20,
-                        "select": true,
+                        "select": false,
                         "dure": "1h20",
                         'desc': "Cette dernière séance travaille principalement les épaules et le dos, tout en aidant à améliorer sa posture.",
                         "routines": [
@@ -645,7 +650,7 @@ var Data = [
                         "nom": "JOUR 23",
                         "idSBloc": 1,
                         "evolutionBloc": 20,
-                        "select": true,
+                        "select": false,
                         "dure": "50min",
                         'desc': "Cette dernière séance travaille principalement les épaules et le dos, tout en aidant à améliorer sa posture.",
                         "routines": [
@@ -673,7 +678,7 @@ var Data = [
                         "nom": "JOUR 24",
                         "idSBloc": 1,
                         "evolutionBloc": 20,
-                        "select": true,
+                        "select": false,
                         "dure": "30min",
                         'desc': "Cette dernière séance travaille principalement les épaules et le dos, tout en aidant à améliorer sa posture.",
                         "routines": [
@@ -698,7 +703,7 @@ var Data = [
                     {
                         "id": 5,
                         "nom": "JOUR 25","evolutionBloc": 20,
-                        "select": true,
+                        "select": false,
                         "desc": "Cette dernière séance travaille principalement les épaules et le dos, tout en aidant à améliorer sa posture.",
                         "routines": [
                             {
@@ -725,6 +730,7 @@ var Data = [
                 id: 6,
                 titre: "Jours 26 à 30",
                 "photo": doc,
+                "evolution":40,
                 "intro": <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'self-start' }}>
                     <h2 >Tiens bon ,on y est ! <span>🔥</span></h2>
                     <p>tu est si pret du bute</p>
@@ -735,7 +741,7 @@ var Data = [
                         "nom": "JOUR 26",
                         "idSBloc": 1,
                         "evolutionBloc": 20,
-                        "select": true,
+                        "select": false,
                         "dure": "30min",
                         'desc': "Cette dernière séance travaille principalement les épaules et le dos, tout en aidant à améliorer sa posture.",
                         "routines": [
@@ -762,7 +768,7 @@ var Data = [
                         "nom": "JOUR 27",
                         "idSBloc": 1,
                         "evolutionBloc": 20,
-                        "select": true,
+                        "select": false,
                         "dure": "1h20",
                         'desc': "Cette dernière séance travaille principalement les épaules et le dos, tout en aidant à améliorer sa posture.",
                         "routines": [
@@ -789,7 +795,7 @@ var Data = [
                         "nom": "JOUR 28",
                         "idSBloc": 1,
                         "evolutionBloc": 20,
-                        "select": true,
+                        "select": false,
                         "dure": "50min",
                         'desc': "Cette dernière séance travaille principalement les épaules et le dos, tout en aidant à améliorer sa posture.",
                         "routines": [
@@ -817,7 +823,7 @@ var Data = [
                         "nom": "JOUR 29",
                         "idSBloc": 1,
                         "evolutionBloc": 20,
-                        "select": true,
+                        "select": false,
                         "dure": "30min",
                         'desc': "Cette dernière séance travaille principalement les épaules et le dos, tout en aidant à améliorer sa posture.",
                         "routines": [
@@ -842,7 +848,7 @@ var Data = [
                     {
                         "id": 5,
                         "nom": "JOUR 30","evolutionBloc": 20,
-                        "select": true,
+                        "select": false,
                         "desc": "Cette dernière séance travaille principalement les épaules et le dos, tout en aidant à améliorer sa posture.",
                         "routines": [
                             {

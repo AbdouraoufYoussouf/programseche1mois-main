@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { NavLink } from 'react-router-dom';
 import { HashLink as Link } from 'react-router-hash-link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -6,50 +6,29 @@ import CircularProgresse from '../components/CircularProgress';
 import { faCaretDown, faCaretRight, faListSquares, } from '@fortawesome/free-solid-svg-icons'
 
 import '../styles/detailStyle.css'
-import { MyContext } from '../lib/context/ProgressContext';
+import { useDispatch, useSelector } from 'react-redux';
+import { onchangeCheched } from '../Redux/SecheSlice';
 
-export const Accordion = ({ idP, item }) => {
-    const [isActive, setIsActive] = useState(true);
-    
-    const {progressTotal, setProgressTotal}=useContext(MyContext)
-    console.log(progressTotal)
+export const Accordion = ({ idP, item ,progress}) => {
+
+    const [isActive, setIsActive] = useState(false);
     // Checkbox
-    const [progress, setProgress] = useState(0);
+    
+    const dispach = useDispatch()
+    const chechedState = useSelector((state) => state.secheState.chechedState)
+    //console.log('chechedState',chechedState)
 
-    const [checkedState, setCheckedState] = useState(
-        new Array(item.soustitres.length).fill(false)
-    );
+    // const [checkedState, setCheckedState] = useState(
+    //     new Array(item.soustitres.length).fill(false)
+    // );
 
-    const handleOnChange = (position) => {
-     
-        const updatedCheckedState = checkedState.map((item, index) =>
-            index === position ? !item : item
-        );
-
-        setCheckedState(updatedCheckedState);
-
-        const total = updatedCheckedState.reduce(
-            (sum, currentState, index) => {
-                if (currentState === true) {
-                    return sum + item.soustitres[index].evolutionBloc;
-                }
-                return sum;
-            },
-            0
-        );
-        
-        setProgress(total);
-
+    const handleOnChange = (idSem,idJour) => {
+        dispach(onchangeCheched({idSem,idJour}))
     };
 
     const toggleActive = () => {
         setIsActive(!isActive)
     }
-
-
-    useEffect(() => {
-
-    }, [progress]);
 
 
     return (
@@ -74,22 +53,22 @@ export const Accordion = ({ idP, item }) => {
             {
                 isActive ? <div style={{ display: 'flex', flexDirection: 'column' }}>
                     {
-                        item.soustitres.map((item, index) => {
+                        item.soustitres.map((jour, index) => {
                             return (
                                 <div key={index} style={{ margin: 0, display: 'flex', flexDirection: 'row', width: 120, alignSelf: 'center', alignItems: 'center', height: 30 }}>
                                     <input
                                         type="checkbox"
                                         id={`custom-checkbox-${index}`}
-                                        name={item.nom}
-                                        value={item.nom}
-                                        checked={checkedState[index]}
-                                        onChange={() => handleOnChange(index)}
+                                        name={jour.nom}
+                                        value={jour.nom}
+                                        checked={jour.select}
+                                        onChange={() => handleOnChange(item.id,jour.id)}
                                     />
 
-                                    <Link style={{ fontSize: 16, textDecoration: 'none', color: 'white', marginLeft: 0 }}
-                                        to={'#' + item.nom}>
-                                        <label htmlFor={`custom-checkbox-${index}`}>{item.nom}</label>
-                                    </Link>
+                                    <a style={{ fontSize: 16, textDecoration: 'none', color: 'white', marginLeft: 0,}}
+                                        href={'#jour' + jour.id}>
+                                        <label >{jour.nom}</label>
+                                    </a>
                                 </div>
                             )
                         })

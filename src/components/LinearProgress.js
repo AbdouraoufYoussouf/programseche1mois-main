@@ -32,6 +32,7 @@ const Progress = styled.div`
   background-color: blueviolet;
     position: absolute;
     left: 0;
+    border-radius: 15px;
 `;
 const Content = styled.p`
   font-size: 22px;
