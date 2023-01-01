@@ -42,9 +42,5 @@ CircularProgressWithLabel.propTypes = {
 
 export default function CircularProgresse({progress}) {
 
-  React.useEffect(() => {
-   
-  }, []);
-
   return <CircularProgressWithLabel value={progress} />;
 }

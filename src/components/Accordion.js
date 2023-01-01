@@ -35,7 +35,7 @@ export const Accordion = ({ idP, item ,progress}) => {
         <div style={{ display: 'flex', flexDirection: 'column', marginBottom: 10 }} >
             <div className='mereItem' >
 
-                <NavLink to={'/program/' + idP + '/detail/' + item.id} className={(nav) => nav.isActive ? 'active' : 'item'}>
+                <NavLink onClick={toggleActive}  to={'/program/' + idP + '/detail/' + item.id} className={(nav) => nav.isActive ? 'active' : 'item'}>
                     <CircularProgresse progress={progress} />
                     <FontAwesomeIcon style={{ marginLeft: 10 }} icon={faListSquares} color='white' size="lg" />
                     <div className='leson'>
@@ -66,7 +66,7 @@ export const Accordion = ({ idP, item ,progress}) => {
                                     />
 
                                     <a style={{ fontSize: 16, textDecoration: 'none', color: 'white', marginLeft: 0,}}
-                                        href={'#jour' + jour.id}>
+                                        href={'#'+jour.slug}>
                                         <label >{jour.nom}</label>
                                     </a>
                                 </div>

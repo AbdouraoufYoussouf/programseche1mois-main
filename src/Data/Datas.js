@@ -31,6 +31,7 @@ var Data = [
                     {
                         "id": 1,
                         "nom": "JOUR 1",
+                        "slug":"Jour1",
                         "idSBloc": 1,
                         "evolutionBloc": 20,
                         "select": true,
@@ -61,6 +62,7 @@ var Data = [
                     {
                         "id": 2,
                         "nom": "JOUR 2",
+                        "slug":"Jour2",
                         "idSBloc": 1,
                         "evolutionBloc": 20,
                         "select": true,
@@ -78,6 +80,7 @@ var Data = [
                     {
                         "id": 3,
                         "nom": "JOUR 3",
+                        "slug":"Jour3",
                         "idSBloc": 1,
                         "evolutionBloc": 20,
                         "select": false,
@@ -107,6 +110,7 @@ var Data = [
                     {
                         "id": 4,
                         "nom": "JOUR 4",
+                        "slug":"Jour4",
                         "idSBloc": 1,
                         "evolutionBloc": 20,
                         "select": false,
@@ -135,6 +139,7 @@ var Data = [
                     {
                         "id": 5,
                         "nom": "JOUR 5",
+                        "slug":"Jour5",
                         "idSBloc": 1,
                         "evolutionBloc": 20,
                         "select": false,
@@ -171,6 +176,7 @@ var Data = [
                     {
                         "id": 1,
                         "nom": "JOUR 6",
+                        "slug":"Jour6",
                         "idSBloc": 1,
                         "evolutionBloc": 20,
                         "select": false,
@@ -199,6 +205,7 @@ var Data = [
                     {
                         "id": 2,
                         "nom": "JOUR 7",
+                        "slug":"Jour7",
                         "idSBloc": 1,
                         "evolutionBloc": 20,
                         "select": false,
@@ -226,6 +233,7 @@ var Data = [
                     {
                         "id": 3,
                         "nom": "JOUR 8",
+                        "slug":"Jour8",
                         "idSBloc": 1,
                         "evolutionBloc": 20,
                         "select": false,
@@ -244,6 +252,7 @@ var Data = [
                     {
                         "id": 4,
                         "nom": "JOUR 9",
+                        "slug":"Jour9",
                         "idSBloc": 1,
                         "evolutionBloc": 20,
                         "select": false,
@@ -276,6 +285,7 @@ var Data = [
                     {
                         "id": 5,
                         "nom": "JOUR 10","evolutionBloc": 20,
+                        "slug":"Jour10",
                         "select": false,
                         "desc": "Cette dernière séance on va juste se reposé un peu pour laisser le coprs recuperer en faisant juste 20 minutes de souplesse",
                         "routines": [
@@ -310,6 +320,7 @@ var Data = [
                     {
                         "id": 1,
                         "nom": "JOUR 11",
+                        "slug":"Jour11",
                         "idSBloc": 1,
                         "evolutionBloc": 20,
                         "select": false,
@@ -337,6 +348,7 @@ var Data = [
                     {
                         "id": 2,
                         "nom": "JOUR 12",
+                        "slug":"Jour12",
                         "idSBloc": 1,
                         "evolutionBloc": 20,
                         "select": false,
@@ -354,6 +366,7 @@ var Data = [
                     {
                         "id": 3,
                         "nom": "JOUR 13",
+                        "slug":"Jour13",
                         "idSBloc": 1,
                         "evolutionBloc": 20,
                         "select": false,
@@ -383,6 +396,7 @@ var Data = [
                     {
                         "id": 4,
                         "nom": "JOUR 14",
+                        "slug":"Jour14",
                         "idSBloc": 1,
                         "evolutionBloc": 20,
                         "select": false,
@@ -411,6 +425,7 @@ var Data = [
                     {
                         "id": 5,
                         "nom": "JOUR 15",
+                        "slug":"Jour15",
                         "idSBloc": 1,
                         "evolutionBloc": 20,
                         "select": false,
@@ -447,6 +462,7 @@ var Data = [
                     {
                         "id": 1,
                         "nom": "JOUR 16",
+                        "slug":"Jour16",
                         "idSBloc": 1,
                         "evolutionBloc": 20,
                         "select": false,
@@ -474,6 +490,7 @@ var Data = [
                     {
                         "id": 2,
                         "nom": "JOUR 17",
+                        "slug":"Jour17",
                         "idSBloc": 1,
                         "evolutionBloc": 20,
                         "select": false,
@@ -501,6 +518,7 @@ var Data = [
                     {
                         "id": 3,
                         "nom": "JOUR 18",
+                        "slug":"Jour18",
                         "idSBloc": 1,
                         "evolutionBloc": 20,
                         "select": false,
@@ -529,6 +547,7 @@ var Data = [
                     {
                         "id": 4,
                         "nom": "JOUR 19",
+                        "slug":"Jour19",
                         "idSBloc": 1,
                         "evolutionBloc": 20,
                         "select": false,
@@ -556,6 +575,7 @@ var Data = [
                     {
                         "id": 5,
                         "nom": "JOUR 20","evolutionBloc": 20,
+                        "slug":"Jour20",
                         "select": false,
                         "desc": "Cette dernière séance travaille principalement les épaules et le dos, tout en aidant à améliorer sa posture.",
                         "routines": [
@@ -594,6 +614,7 @@ var Data = [
                     {
                         "id": 1,
                         "nom": "JOUR 21",
+                        "slug":"Jour21",
                         "idSBloc": 1,
                         "evolutionBloc": 20,
                         "select": false,
@@ -621,6 +642,7 @@ var Data = [
                     {
                         "id": 2,
                         "nom": "JOUR 22",
+                        "slug":"Jour22",
                         "idSBloc": 1,
                         "evolutionBloc": 20,
                         "select": false,
@@ -648,6 +670,7 @@ var Data = [
                     {
                         "id": 3,
                         "nom": "JOUR 23",
+                        "slug":"Jour23",
                         "idSBloc": 1,
                         "evolutionBloc": 20,
                         "select": false,
@@ -676,6 +699,7 @@ var Data = [
                     {
                         "id": 4,
                         "nom": "JOUR 24",
+                        "slug":"Jour24",
                         "idSBloc": 1,
                         "evolutionBloc": 20,
                         "select": false,
@@ -703,6 +727,7 @@ var Data = [
                     {
                         "id": 5,
                         "nom": "JOUR 25","evolutionBloc": 20,
+                        "slug":"Jour25",
                         "select": false,
                         "desc": "Cette dernière séance travaille principalement les épaules et le dos, tout en aidant à améliorer sa posture.",
                         "routines": [
@@ -739,6 +764,7 @@ var Data = [
                     {
                         "id": 1,
                         "nom": "JOUR 26",
+                        "slug":"Jour26",
                         "idSBloc": 1,
                         "evolutionBloc": 20,
                         "select": false,
@@ -766,6 +792,7 @@ var Data = [
                     {
                         "id": 2,
                         "nom": "JOUR 27",
+                        "slug":"Jour27",
                         "idSBloc": 1,
                         "evolutionBloc": 20,
                         "select": false,
@@ -793,6 +820,7 @@ var Data = [
                     {
                         "id": 3,
                         "nom": "JOUR 28",
+                        "slug":"Jour28",
                         "idSBloc": 1,
                         "evolutionBloc": 20,
                         "select": false,
@@ -821,6 +849,7 @@ var Data = [
                     {
                         "id": 4,
                         "nom": "JOUR 29",
+                        "slug":"Jour29",
                         "idSBloc": 1,
                         "evolutionBloc": 20,
                         "select": false,
@@ -848,6 +877,7 @@ var Data = [
                     {
                         "id": 5,
                         "nom": "JOUR 30","evolutionBloc": 20,
+                        "slug":"Jour30",
                         "select": false,
                         "desc": "Cette dernière séance travaille principalement les épaules et le dos, tout en aidant à améliorer sa posture.",
                         "routines": [

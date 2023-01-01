@@ -90,7 +90,7 @@ export const Details = () => {
                 width: "100%",
               }}
             >
-              <h2 id={'jour'+item.id}
+              <h2 id={item.slug}
                 className="jour"
                 style={{
                   display: "flex",
