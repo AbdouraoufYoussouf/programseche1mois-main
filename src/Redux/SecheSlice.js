@@ -46,7 +46,7 @@ const secheSlice = createSlice({
        //somme += total
     });
     if(somme===3){
-        state.seche[0].evolutionTotal = somme+17
+        state.seche[0].evolutionTotal = somme+10
     }else if(somme===0){
         state.seche[0].evolutionTotal = somme
     }else{
