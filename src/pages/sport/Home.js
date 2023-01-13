@@ -71,6 +71,7 @@ export default function Home() {
                     <h2 className='h2 '>je sais que tu en as marre de ton bidon de ventre ,c'est le moment de t'en debarasser .</h2>
                 </div>
             </div>
+            <h2 style={{ textAlign:'center'}}>Liste des Programes</h2>
             <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', marginTop: 20 }}>
                 {
                     Data.map((item, index) => {
